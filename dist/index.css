@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fragment Mono", monospace;
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.finish {
+  margin-top: 90px;
+}
+
+textarea {
+  margin-bottom: 50px;
+}
+
+.item2 {
+  display: none;
+}
+
+.item3 {
+  display: none;
+  width: 50%;
+}
+
+.item4 {
+  display: none;
+}
+
+#confirm {
+  align-items: center;
+  width: 300px;
+  margin-top: 45px;
+}
+
