@@ -25,10 +25,13 @@ function confirm() {
   confirm.style.backgroundColor = "green";
   confirm.style.color = "#fff";
 
+  document.querySelector(".vote").style.display = "none";
+
   setTimeout(function () {
     confirm.value = "Vote";
     confirm.style.backgroundColor = "#fff";
     confirm.style.color = "#000";
+    document.querySelector(".vote").style.display = "flex";
   }, 4000);
 }
 
