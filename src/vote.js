@@ -18,6 +18,8 @@ document.getElementById("init").addEventListener("click", function () {
 });
 
 function confirm() {
+  const audio = new Audio("../audio/confirma-urna.mp3");
+  audio.play();
   const confirm = document.getElementById("confirm");
   confirm.value = "voto computado";
   confirm.style.backgroundColor = "green";
