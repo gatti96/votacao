@@ -11,7 +11,7 @@ document.getElementById("init").addEventListener("click", function () {
 
   if (senha === password) {
     document.querySelector(".item1").style.display = "none";
-    document.querySelector(".item2").style.display = "block";
+    document.querySelector(".item2").style.display = "flex";
   } else {
     alert("Senha incorreta");
   }
@@ -71,13 +71,13 @@ document.querySelector(".theEnd").addEventListener("click", function () {
     const result = document.getElementById("result");
     result.value = `Total de votantes: ${electore}
     
-    Sim: ${perYes}%
-    Não: ${perNot}%
-    Nulo: ${perNule}%
+    Sim: ${perYes.toFixed(2)}%
+    Não: ${perNot.toFixed(2)}%
+    Nulo: ${perNule.toFixed(2)}%
     
     Votos:
-    SIM ${yes} votos
-    NÃO ${not} votos
+    SIM: ${yes} 
+    NÃO: ${not} 
     NULO: ${nule}`;
   } else {
     alert("Senha incorreta!");
